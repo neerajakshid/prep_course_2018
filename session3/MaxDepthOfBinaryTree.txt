@@ -1,0 +1,16 @@
+public class Solution {
+    public int maxDepth(TreeNode A) {
+        
+        if(A == null)
+            return 0;
+            
+        else {
+            int leftLength = 1+ maxDepth(A.left);
+            int rightLength = 1+ maxDepth(A.right);
+        }
+            
+    
+    return Math.max(leftLength, rightLength);
+    
+    }
+}
